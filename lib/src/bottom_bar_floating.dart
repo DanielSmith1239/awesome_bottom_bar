@@ -189,6 +189,7 @@ class _BottomBarFloatingState extends State<BottomBarFloating> with TickerProvid
                 children: List.generate(widget.items.length, (index) {
                   return Expanded(
                     child: InkWell(
+                      borderRadius: widget.borderRadius,
                       onTap: index != _selectedIndex!
                           ? () {
                               if (index != _selectedIndex) {
